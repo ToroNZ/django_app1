@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Magnate</title>
+	<meta charset="utf-8" />
+  {% load staticfiles %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+  <style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">INVERSORES</a></li>
+        <li><a href="#how">COMO FUNCIONA</a></li>
+        <li><a href="#news">OPORTUNIDADES</a></li>
+        <li><a href="#faq">FAQ</a></li>
+	<li><a href="#novedades">NOVEDADES</a></li>
+	<li><a href="#login">INGRESAR</a></li>
+	<li><a href="#contact">REGISTRATE</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div>
+	   {% block content %}
+	   {% endblock %}
+	</div>
+</body>
+
+</html>
